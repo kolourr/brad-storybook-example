@@ -13,7 +13,7 @@ const StorySchema = new mongoose.Schema({
   status: {
     type: String,
     default: 'public',
-    enum: ['public', 'private'],
+    enum: ['public', 'private'], //enum is a list of possible values 
   },
   user: {
     type: mongoose.Schema.Types.ObjectId,
